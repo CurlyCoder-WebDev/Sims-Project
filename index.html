@@ -1,128 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SIMS4 Home Design</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Serif:wght@700&display=swap');
-    </style>
-  </head>
 
-  <body>
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SIMS4 Home Design</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Serif:wght@700&display=swap');
+  </style>
+  <script defer src="script.js"></script>
+</head>
 
-      <!-- The Navigation menu -->
-      <nav>
-        <div class="logo">
-          <img
-            src="https://logos-download.com/wp-content/uploads/2016/12/Sims_4_logo_logotype.png"
-            alt="SIMS 4 logo" />
-        </div>
+<body>
+  <header>
 
-        <!-- Add the a transition, may have to use css -->
-        <div class="nav-bar">
-          <ul class="nav_bar_links_ul">
-            <li><a href= "#">Home</a></li>
-            <li><a href= ".destination">Select Your Home</a></li> <!-- the destinaton class is to lead you to the correct place in the page -->
-            <li><a href= ".destination">Home Design Styles</a></li>
-            <li><a href= ".destination">Shop by Room</a></li>
-          </ul>  
-        </div>
-      </nav>
+    <!-- The Navigation menu -->
+    <nav>
+      <div class="logo">
+        <img src="https://logos-download.com/wp-content/uploads/2016/12/Sims_4_logo_logotype.png" alt="SIMS 4 logo" />
+      </div>
 
-<!-- Header Slideshow -->
-      <ul class="slideshow">
-        <li><span class="dot"></span></li>
-        <li><span class="dot">2</span></li>
-        <li><span class="dot"></span></li>
-        <li><span class="dot"></span></li>
-        <li><span class="dot"></span></li>
-      </ul>
+      <!-- Add the a transition, may have to use css -->
+      <div class="nav-bar">
+        <ul class="nav_bar_links_ul">
+          <li><a href="#">Home</a></li>
+          <li><a href=".destination">Select Your Home</a></li>
+          <!-- the destinaton class is to lead you to the correct place in the page -->
+          <li><a href=".destination">Home Design Styles</a></li>
+          <li><a href=".destination">Shop by Room</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header Slideshow -->
+    <ul class="slideshow">
+      <li><span class="dot"></span></li>
+      <li><span class="dot">2</span></li>
+      <li><span class="dot"></span></li>
+      <li><span class="dot"></span></li>
+      <li><span class="dot"></span></li>
+    </ul>
+
+
+    <img class="main-logo"
+      src="https://4.bp.blogspot.com/-yJBB2nm4bLQ/VYn7rk9JsmI/AAAAAAAAAD4/jKm5De5MmB4/s1600/logo.png"
+      alt="SIMS 4 House logo" />
+    <h1> Welcome to The SIMS 4 Home Design</h1>
+
+  </header>
+  <!-- div is your container -->
+  <div id="Lightbox" class="modal">
+    <div class="modal-content">
+      <span class="close pointer" onclick="closeLightbox()">&times;</span>
+      <!-- Need to dynamically fill this in with the image you clicked with JS-->
+
+    </div>
+  </div>
 
   
-      <img
-        class="main-logo"
-        src="https://4.bp.blogspot.com/-yJBB2nm4bLQ/VYn7rk9JsmI/AAAAAAAAAD4/jKm5De5MmB4/s1600/logo.png"
-        alt="SIMS 4 House logo"
-        />
-        <h1> Welcome to The SIMS 4 Home Design</h1>
-   
-    </header>
-<!-- div is your container -->
-    <div class="first"
-    class="destination">
-     <p>  Find Your Home</p>
-     <div class="row">
-        <div class="column">
-          <img src="https://static.fandomspot.com/images/11/10521/19-1312-21-chic-street-eclectic-artist-sims-4-mod.jpg" alt="Eclectic" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="https://i.pinimg.com/originals/6c/83/d5/6c83d55f111f7cbc6e13a41f70bde3b6.png" alt="Boho Living Room" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="https://i.pinimg.com/originals/ef/3a/0c/ef3a0c935884d52d40eef76e994f11af.jpg" alt="Mid-Century" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="https://i.ytimg.com/vi/CM6stLb-gKo/maxresdefault.jpg" alt="Victorian" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="https://i0.wp.com/thesimscatalog.com/sims4/wp-content/uploads/2019/08/55-glam-apartment-122-hakim-house-at-soulsistersims_5d4236a4212c0.jpeg?fit=670%2C377&ssl=1" alt="Glam" style="width:100%">
-        </div>
-  </div>
-
-      <div class="second" class="destination">
-        <p> Inspiration</p>
-        
-      <div class="row">
-        <div class="column">
-          <img src="https://static.fandomspot.com/images/11/10521/19-1312-21-chic-street-eclectic-artist-sims-4-mod.jpg" alt="Eclectic" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="https://i.pinimg.com/originals/6c/83/d5/6c83d55f111f7cbc6e13a41f70bde3b6.png" alt="Boho Living Room" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="https://i.pinimg.com/originals/ef/3a/0c/ef3a0c935884d52d40eef76e994f11af.jpg" alt="Mid-Century" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="https://i.ytimg.com/vi/CM6stLb-gKo/maxresdefault.jpg" alt="Victorian" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="https://i0.wp.com/thesimscatalog.com/sims4/wp-content/uploads/2019/08/55-glam-apartment-122-hakim-house-at-soulsistersims_5d4236a4212c0.jpeg?fit=670%2C377&ssl=1" alt="Glam" style="width:100%">
-        </div>
-        <!-- I would like to have about 16 pictures here on a carousel ... same goes for all of the P tags -->
+  <div class="first" class="destination">
+    <p> Find Your Home</p>
+    <div class="row">
+      <div class="column">
+        <img src="https://static.fandomspot.com/images/11/10521/19-1312-21-chic-street-eclectic-artist-sims-4-mod.jpg"
+          alt="Eclectic" style="width:100%" onclick="openLightbox(this.src)" class ="image-slide">
+      </div>
+      <div class="column">
+        <img src="https://i.pinimg.com/originals/6c/83/d5/6c83d55f111f7cbc6e13a41f70bde3b6.png" alt="Boho Living Room"
+          style="width:100%" onclick="openLightbox(this.src)" class ="image-slide">
+      </div>
+      <div class="column">
+        <img src="https://i.pinimg.com/originals/ef/3a/0c/ef3a0c935884d52d40eef76e994f11af.jpg" alt="Mid-Century"
+          style="width:100%" onclick="openLightbox(this.src)" class ="image-slide">
+      </div>
+      <div class="column">
+        <img src="https://i.ytimg.com/vi/CM6stLb-gKo/maxresdefault.jpg" alt="Victorian" style="width:100%"
+          onclick="openLightbox(this.src)" class ="image-slide">
+      </div>
+      <div class="column">
+        <img
+          src="https://i0.wp.com/thesimscatalog.com/sims4/wp-content/uploads/2019/08/55-glam-apartment-122-hakim-house-at-soulsistersims_5d4236a4212c0.jpeg?fit=670%2C377&ssl=1"
+          alt="Glam" style="width:100%" onclick="openLightbox(this.src)" class ="image-slide">
       </div>
     </div>
-
-
-        <div class="third"
-        class="destination">
-        <p>  Style by Room</p>
-
-        <div class="row">
-        <div class="column">
-          <img src="https://static.fandomspot.com/images/11/10521/19-1312-21-chic-street-eclectic-artist-sims-4-mod.jpg" alt="Eclectic" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="https://i.pinimg.com/originals/6c/83/d5/6c83d55f111f7cbc6e13a41f70bde3b6.png" alt="Boho Living Room" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="https://i.pinimg.com/originals/ef/3a/0c/ef3a0c935884d52d40eef76e994f11af.jpg" alt="Mid-Century" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="https://i.ytimg.com/vi/CM6stLb-gKo/maxresdefault.jpg" alt="Victorian" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="https://i0.wp.com/thesimscatalog.com/sims4/wp-content/uploads/2019/08/55-glam-apartment-122-hakim-house-at-soulsistersims_5d4236a4212c0.jpeg?fit=670%2C377&ssl=1" alt="Glam" style="width:100%">
-        </div>
   </div>
-    
+
+  <div class="second" class="destination">
+    <p> Inspiration</p>
+
+    <div class="row">
+      <div class="column">
+        <img src="https://static.fandomspot.com/images/11/10521/19-1312-21-chic-street-eclectic-artist-sims-4-mod.jpg"
+          alt="Eclectic" style="width:100%" onclick="openLightbox(this.src)" class ="image-slide">
+      </div>
+      <div class="column">
+        <img src="https://i.pinimg.com/originals/6c/83/d5/6c83d55f111f7cbc6e13a41f70bde3b6.png" alt="Boho Living Room"
+          style="width:100%" onclick="openLightbox(this.src)" class ="image-slide">
+      </div>
+      <div class="column">
+        <img src="https://i.pinimg.com/originals/ef/3a/0c/ef3a0c935884d52d40eef76e994f11af.jpg" alt="Mid-Century"
+          style="width:100%" onclick="openLightbox(this.src)" class ="image-slide">
+      </div>
+      <div class="column">
+        <img src="https://i.ytimg.com/vi/CM6stLb-gKo/maxresdefault.jpg" alt="Victorian" style="width:100%"
+          onclick="openLightbox(this.src)" class ="image-slide">
+      </div>
+      <div class="column">
+        <img
+          src="https://i0.wp.com/thesimscatalog.com/sims4/wp-content/uploads/2019/08/55-glam-apartment-122-hakim-house-at-soulsistersims_5d4236a4212c0.jpeg?fit=670%2C377&ssl=1"
+          alt="Glam" style="width:100%" onclick="openLightbox(this.src)" class ="image-slide">
+      </div>
+      <!-- I would like to have about 16 pictures here on a carousel ... same goes for all of the P tags -->
+    </div>
+  </div>
+
+
+  <div class="third" class="destination">
+    <p> Style by Room</p>
+
+    <div class="row">
+      <div class="column">
+        <img src="https://static.fandomspot.com/images/11/10521/19-1312-21-chic-street-eclectic-artist-sims-4-mod.jpg"
+          alt="Eclectic" style="width:100%" onclick="openLightbox(this.src)" class ="image-slide">
+      </div>
+      <div class="column">
+        <img src="https://i.pinimg.com/originals/6c/83/d5/6c83d55f111f7cbc6e13a41f70bde3b6.png" alt="Boho Living Room"
+          style="width:100%" onclick="openLightbox(this.src)" class ="image-slide">
+      </div>
+      <div class="column">
+        <img src="https://i.pinimg.com/originals/ef/3a/0c/ef3a0c935884d52d40eef76e994f11af.jpg" alt="Mid-Century"
+          style="width:100%" onclick="openLightbox(this.src)" class ="image-slide">
+      </div>
+      <div class="column">
+        <img src="https://i.ytimg.com/vi/CM6stLb-gKo/maxresdefault.jpg" alt="Victorian" style="width:100%"
+          onclick="openLightbox(this.src)" class ="image-slide">
+      </div>
+      <div class="column">
+        <img
+          src="https://i0.wp.com/thesimscatalog.com/sims4/wp-content/uploads/2019/08/55-glam-apartment-122-hakim-house-at-soulsistersims_5d4236a4212c0.jpeg?fit=670%2C377&ssl=1"
+          alt="Glam" style="width:100%" onclick="openLightbox(this.src)" class ="image-slide">
+      </div>
+
+    </div>
+  </div>
 
 
 
 
-  </body>
+</body>
+
 </html>
 
 
@@ -131,7 +158,7 @@
 
 <!-- may have to put the images in a div per section  -->
 
- <!-- * Change the name of the ID
+<!-- * Change the name of the ID
             * place the image tags inside of the p tags 
               * use the css styler to change the background color
                 * can change the BC 1st
@@ -144,5 +171,3 @@
     Shop by Room: Kitchens, living rooms, bedroom, bathroom, nursery, nursery nook, breakfast nook, dining room, office, office nook, dorm room ideas, 
     
     -->
-
-    
